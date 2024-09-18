@@ -1,0 +1,23 @@
+multiplex:
+    1:
+        layers:
+            - multiplex/1/ppi.biogrid.uniprot.mapped.2023.12.05.tsv
+            - multiplex/1/ubinet-E3_substrate_interactions.tsv
+            - multiplex/1/httpdegron.phasep.pro_predicted_ESIs.tsv
+            - multiplex/1/httpsawi.cuhk.edu.cn.ubinetdownload.php_PPI_Human_210209.tsv
+    2:
+        layers:
+            - multiplex/2/ReactomePathwaysRelation.tsv
+    3:
+        layers:
+            - multiplex/3/GO.all.tsv
+
+bipartite:
+    bipartite/1_2.tsv:
+        source: 1
+        target: 2
+    bipartite/1_3.tsv:
+        source: 1
+        target: 3
+seed:
+    seeds.txt
